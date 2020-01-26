@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.MainMenuButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // MainMenuButton
+            // 
+            this.MainMenuButton.Location = new System.Drawing.Point(666, 497);
+            this.MainMenuButton.Name = "MainMenuButton";
+            this.MainMenuButton.Size = new System.Drawing.Size(205, 98);
+            this.MainMenuButton.TabIndex = 0;
+            this.MainMenuButton.Text = "Main Menu";
+            this.MainMenuButton.UseVisualStyleBackColor = true;
+            this.MainMenuButton.Click += new System.EventHandler(this.MainMenuButton_Click);
+            // 
+            // ViewAllQuotes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(974, 729);
+            this.Controls.Add(this.MainMenuButton);
+            this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button MainMenuButton;
     }
 }

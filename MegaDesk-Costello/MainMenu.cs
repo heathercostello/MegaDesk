@@ -19,20 +19,35 @@ namespace MegaDesk_Costello
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-
+            //Close the Main Menu Form
+            Close();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            AddQuote viewAddQuote = new AddQuote();
+            viewAddQuote.Tag = this;
+            viewAddQuote.Show(this);
+            Hide();
         }
 
         private void ViewButton_Click(object sender, EventArgs e)
         {
-
+            ViewAllQuotes viewViewAllQuotes = new ViewAllQuotes();
+            viewViewAllQuotes.Tag = this;
+            viewViewAllQuotes.Show(this);
+            Hide();
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
+        {
+            SearchQuotes viewSearchQuotes = new SearchQuotes();
+            viewSearchQuotes.Tag = this;
+            viewSearchQuotes.Show(this);
+            Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

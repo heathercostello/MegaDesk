@@ -8,5 +8,7 @@ namespace MegaDesk_Costello
 {
     class DeskQuote
     {
+
     }
-}
+
+ }

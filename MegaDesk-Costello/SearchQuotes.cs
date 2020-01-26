@@ -16,5 +16,17 @@ namespace MegaDesk_Costello
         {
             InitializeComponent();
         }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            MainMenu viewMainMenu = (MainMenu)Tag;
+            viewMainMenu.Show();
+            Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
